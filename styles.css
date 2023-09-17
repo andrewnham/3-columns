@@ -1,0 +1,132 @@
+body {
+    box-sizing: border-box;
+    width: 920px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 0;
+}
+
+.card {
+    min-height: 500px;
+    position: relative;
+}
+
+.card img {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.card p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    text-wrap: wrap;
+    line-height: 25px;
+    font-size: 15px;
+    opacity: 0.75;
+    width: 212px;
+    margin: 40px;
+    color: white;
+}
+
+.card h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: bold;
+    margin-left: 40px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.button {
+    font-family: 'Lexend Deca', sans-serif;
+    margin-left: 40px;
+    width: 146px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 80px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: #ffffff;
+}
+
+.button:hover .link-sedan,
+.button:hover .link-SUVs, 
+.button:hover .link-luxury {
+    color: #fff;
+} 
+
+.button a {
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+}
+
+.link-sedan {
+    color:#e28625;
+}
+
+.link-SUVs {
+    color:#006971;
+}
+
+.link-luxury {
+    color:#004140;
+}
+
+.sedan {
+    background-color: #e28625;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.SUVs {
+    background-color: #006971;
+}
+
+.luxury {
+    background-color: #004140;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media only screen and (max-width: 375px) { 
+    body {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 1326px;
+    }
+
+    .sedan {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0;
+    }
+
+    .luxury {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 0;
+    }
+
+    .card {
+        min-height: 440px;
+        position: relative;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+}
