@@ -3,13 +3,12 @@ body {
     width: 920px;
     display: flex;
     flex-direction: row;
-    margin: 10px;
+    margin: 10px auto;
     padding: 0;
 }
 
 .card {
-    min-height: 500px;
-    position: relative;
+    min-height: auto;
 }
 
 .card img {
@@ -18,15 +17,16 @@ body {
 }
 
 .card p {
+    width: 62%;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
     text-wrap: wrap;
     line-height: 25px;
     font-size: 15px;
     opacity: 0.75;
-    width: 212px;
     margin: 40px;
     color: white;
+    padding-bottom: 60px;
 }
 
 .card h1 {
@@ -38,18 +38,18 @@ body {
 }
 
 .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Lexend Deca', sans-serif;
     margin-left: 40px;
+    margin-bottom: 40px;
     width: 146px;
     height: 40px;
     border-radius: 20px;
     background-color: #ffffff;
-    text-align: center;
-    margin-top: 80px;
     border: 2px solid transparent;
     cursor: pointer;
-    position: absolute;
-    bottom: 40px;
     transition: background-color 0.3s ease;
 }
 
@@ -66,10 +66,6 @@ body {
 
 .button a {
     font-size: 14px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-decoration: none;
 }
 
@@ -101,12 +97,19 @@ body {
     border-bottom-right-radius: 10px;
 }
 
-@media only screen and (max-width: 375px) { 
+@media only screen and (max-width: 940px) { 
+    body {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) { 
     body {
         display: flex;
         flex-direction: column;
         width: auto;
-        height: 1326px;
+        height: auto;
+        padding: 10px;
     }
 
     .sedan {
@@ -122,11 +125,12 @@ body {
     }
 
     .card {
-        min-height: 440px;
+        min-height: 327px;
         position: relative;
     }
 
     .card p {
         font-size: 16px;
+        padding-bottom: 0;
     }
 }
