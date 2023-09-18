@@ -1,9 +1,11 @@
 body {
     box-sizing: border-box;
-    width: 920px;
+    width: auto;
+    height: 100vh;
     display: flex;
     flex-direction: row;
-    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
     padding: 0;
 }
 
